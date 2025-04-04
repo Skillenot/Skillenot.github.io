@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totoroamor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="full-screen-header" style="background-image: url('images/cuteback.jpg')">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1>Plan infalible para seguir siendo totoroesposos</h1>
+            <p class="subtitle">Por más dificil que sea la situación, quiero que sepas que <strong>eres tú.</strong></p>
+        </div>
+        <div class="scroll-indicator">
+            <span>Desliza para ver más</span>
+            <div class="arrow"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="message-section with-image" style="background-image: url('images/sanf.jpg')">
+            <div class="image-overlay"></div>
+            <div class="message-card1" id="special-card">
+                <h2>Sé que la situación no ha sido fácil</h2>
+                <p><strong>Te apoyo siempre sin importar el qué.</strong> Sé que desde que se torció todo con tus esfuerzos por ascender en el trabajo; alrededor se tornó obscuro,
+                solo quiero que sepas que así como tu me das luz entre toda esta obscuridad, yo quiero ser esa lucesita que te muestre o te acompañe en tu camino. Tu salud es primordial,
+        la comunicación se puede mejorar, nada de lo que ocurrió fue tu culpa, fue una coincidencia de situaciones desafortunadas, tu determinación es única, tu brillo es incandescente. Un
+    trabajo, una posición, no te define como persona, solo unos pocos conocemos tu potencial, y sabemos que cuando deseas, puedes <strong>volar, brillar, como una <a style="color:#feca57">Luciérnaga</a> en San francisco.</strong></p>
+            </div>
+        </section>
+        <script>
+            const card = document.getElementById('special-card');
+            
+            function createFirefly() {
+                const firefly = document.createElement('div');
+                firefly.className = 'firefly';
+                
+               
+                const x = Math.random() * 80 + 10;
+                const y = Math.random() * 80 + 10;
+                firefly.style.left = `${x}%`;
+                firefly.style.top = `${y}%`;
+                
+                
+                const duration = Math.random() * 3 + 2;
+                firefly.style.animation = `blink ${duration}s infinite`;
+                
+                card.appendChild(firefly);
+                
+               
+                setTimeout(() => {
+                    firefly.remove();
+                }, duration * 1000);
+            }
+    
+         
+            setInterval(createFirefly, 800);
+            
+           
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes blink {
+                    0%, 100% { opacity: 0; transform: scale(0.5); }
+                    50% { opacity: 1; transform: scale(1.2); box-shadow: 0 0 15px 5px #ffeb3b; }
+                }
+            `;
+            document.head.appendChild(style);
+        </script>
+
+        <section class="message-section">
+            <div class="message-card with-icon">
+                <img src="images/couple1.jpg" class="round-image">
+                <h2>Juntos</h2>
+                <p>Todos los obstáculos que hemos pasado, que juntos hemos de alguna manera evitado, o rodeado por no saber como superarlos son un signo de que queremos avanzar juntos, que
+                    a pesar de no saber exáctamente como abordar o solucionar ciertas situaciones, lo hagamos, juntos, a nuestra manera, es invaluable y una muestra de que queremos hacer las cosas bien; saber que con una mirada, un gesto, un abrazo, deseamos
+                    que todo lo que nos afecta, termine, y podamos continuar <strong>juntos</strong>. Podríamos tener una mejor comunicación? Sí,
+                    y me gustaría trabajar en ello cada día contigo, empecemos a superar los obstáculos en vez de evitarlos, juntos, a hablar de lo que nos hace sentir felices, tristes, pensativos, juntos,
+                    lo que nos hace dudar, lo que nos hace estremecer, lo que nos hace cambiar de perspectiva, juntos. <br><br> <img src="images/totoro.gif" alt="" class="src">
+                </p>
+            </div>
+        </section>
+
+        <section class="message-section with-image" style="background-image: url('images/couple2.jpg')">
+            <div class="image-overlay"></div>
+            <div class="message-card transparent">
+                <h2 style="color:#ff6b6b">Te amo</h2>
+                <p>Desde que confundiste taxes con taxis,
+                    supiste dibujar en mi pecho un "impuesto permanente".
+                    No espero que seas tú… sé que eres tú,
+                    el mapa que me falta, el sí sin quizás.</p><br>
+                    
+                    <p> Recorro en tu auto calles que no existen,
+                    tus dedos en mi pierna, el mundo es un suspiro,
+                    hablamos tonterías, reímos sin frenos,
+                    y el hogar ya no es sitio… es tu respiro.</p><br>
+                    
+                    <p> Mis dramas son tormentas, tus brazos el puerto,
+                    dijiste "juntos" y el miedo se volvió viento.
+                    Tus besos son el primer día, repetido en el tiempo,
+                    como si la boca olvidara que hubo otros intentos.</p><br>
+                    
+                     <p>Un Cabano en mi mano cada vez que te parabas de tu puesto:
+                    es tu "voy hasta el fin del mundo" entre robos y cráteres que te hacen saltar, entre taxis ambulancias,
+                    tu "no hay distancia" cuando el reloj apremia,
+                    tu "toma, esto es amor" hecho en envoltura de papel, en pequeños frascos, en listas de pros y contras de que seas mía, entre chocobreaks y planes que nunca llevamos a cabo.</p><br>
+
+                    <p>Que me lastima cada noche el pensar tu anhelo al planear cada mínimo detalle,
+                        para que al final yo te falle, no lo hago con intención de herirte o de demostrarte un amor fugaz,
+                        es algo que tengo que reprogramar, me sobra el amor por tí, me desbordo entre cada lágrima que dejaste salir por mí, 
+                        algo que quiero reparar, algo que quiero recuperar, y me dá miedo, por que en mi cabeza resuena el que quizá, 
+                        sea muy tarde para volver a volar.
+                    </p><br>
+                    
+                    <p> Mientras tanto yo, nervioso, giro en círculos esperando tu llegada,
+                    planeando cómo robarte un "jajaja",
+                    porque eres el "hasta el fin del mundo"
+                    y yo solo sé que quiero amarte, aunque a veces me dejes mudo.</p>
+            </div>
+        </section>
+
+        <section class="message-section">
+            <div class="message-card">
+                <div class="image-grid">
+                    <img src="images/couple3.jpg" alt="Trabajo en equipo">
+                    <img src="images/cascos.jpg" alt="Oficina">
+                </div>
+                <h2>Perdón por dejarte sola</h2>
+                <p>Desde mi accidente en moto, sé que todo se fue cuesta abajo, pero, necesito que sepas que ese silencio, o ausencia, nunca fue falta de amor, sino un dolor que me ahogaba por dentro.
+                    Cuando la moto y el asfalto se encontraron ese 31 de octubre, no dejaba de pensar que perdí la oportunidad de verte ese día, entendí que no solo me fracturé la muñeca, me rompí por dentro. <br><br>
+
+                    El encierro, el desespero, el sobrepensar, el arrepentirme, se convirtió en un laberinto, donde los días pasaban como si fueran meses, cada día era un duelo conmigo mismo, cada pensamiento, un reproche por lo que no logré, cada 
+                    arrepentimiento, un azote en mi espalda por no haber hecho ese plan contigo, y en tu ausencia (Desde donde yo te alejaba) el vacío solo crecía, no te quería involucrar o sobrecargar con mis pensamientos a parte de mi fractura. <br><br>
+
+                    Me perdí en esa niebla, pero jamás dejé de ver tu luz, sabía que estabas ahí, esperando, y aún así no pude darte lo que merecías, mis risas completas, mis manos (la derecha almenos) abiertas, mi presente, mi tiempo, el tiempo de calidad juntos.
+                    El dolor me hizo creer que no era suficiente para tí, y buscaba cualquier excusa para liberarte de mí.  <br><br>
+
+                    Estar encerrado 4 meses en las mismas cuatro paredes no me ayudó para nada con esos pensamientos, pero cada vez que tu venías, solo quería verte reir, disfrutar, hablar por horas, que para nosotros eran minutos.
+                    Siento que si yo sobreviví a esa caída, nuestro "te amo" puede sobrevivir a más, a nuestros silencios, a nuestros miedos, a nuestras dudas.
+                </p>
+            </div>
+        </section>
+
+        <section class="final-message">
+        
+            <video class="video-background" autoplay loop muted playsinline>
+                <source src="images/cucar.mp4" type="video/mp4">
+            </video>
+            
+            <div class="final-overlay"></div>
+            
+        
+            <div class="final-content">
+                <h2>Te amo</h2>
+                <p class="highlight">Enfrentemos nuestros miedos y nuestras dudas, como luchamos vorazmente contra la invasión cucarrón, ellos tenían más números, pero ellos no cuentan con nuestras mentes maquiavélicas para controlar enjambres, prendiendo y apagando luces, logramos superarlo, juntos.
+                    <br><br>Te amo, mi comandante de guerra contra los insectos, déjame ser tu general.</p>
+            </div>
+        </section>
+    </main>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+
+ 
+    <section class="compact-messages">
+        <div class="compact-card">
+            <h3><i class="fas fa-heart" style="color: #ff6b6b;"></i> Tu sonrisa siempre ilumina mi día</h3>
+            <p>Incluso en nuestros momentos más dificiles, tu sonrisa me tranquiliza, me hace volver a la tierra, me llena.</p>
+        </div>
+        <div class="compact-card">
+            <h3><i class="fas fa-star" style="color: #feca57;"></i> Eres mi estrella</h3>
+            <p>Nunca dudes de tu brillo, eres una entre miles y miles de billones, entre todas, con su brillo único iluminas todo el espacio y mi cósmos.</p>
+        </div>
+        <div class="compact-card">
+            <h3><i class="fas fa-hand-holding-heart" style="color: #a8edea;"></i> Quiero hacerlo a tu lado</h3>
+            <p>Cada reto que superemos nos hará más fuertes que el anterior, eres tú, quiero seguir superando obstáculos mientras sostengo tu mano.</p>
+        </div>
+        <div class="compact-card">
+            <h3><i class="fas fa-coffee" style="color: #6F4E37;"></i> Pequeños momentos</h3>
+            <p>Vayamos a tomar café, ya abajo tienes el schedule, así que no puedes negarte, te tocó.</p>
+        </div>
+    </section>
+
+    <!-- Reproductor de Spotify -->
+    <section class="spotify-player">
+        <h2><i class="fab fa-spotify" style="color: #1DB954;"></i> Nuestra Banda Sonora</h2>
+        <div class="song-list">
+            <div class="song-item">
+                <div class="song-number">1</div>
+                <div>
+                    <div class="song-title">VROOM VROOM - Bébe Yana</div>
+                    <div class="song-memory">La canción que estuchaba todas las noches antes de llegar a casa, pensando en tí, tus ojos...</div>
+                </div>
+            </div>
+            <div class="song-item">
+                <div class="song-number">2</div>
+                <div>
+                    <div class="song-title">¿A Qué Te Sabe el Café? - Sebastián Romero</div>
+                    <div class="song-memory">Escuchar esta canción me llenaba el corazón de nostalgia por el futuro, el llevarte el café a la cama y hablar de nuestras incoherencias para empezar el día juntos.</div>
+                </div>
+            </div>
+            <div class="song-item">
+                <div class="song-number">3</div>
+                <div>
+                    <div class="song-title">Nuestro Juramento - Julio Jaramillo</div>
+                    <div class="song-memory">Lamento haberte puesto carita de pena, mi dulce amor, me duele tanto el llanto que tú derramas. Que se llena de angustia mi corazón.</div>
+                </div>
+            </div>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/75TTYivlE6DsgRvsltTaZO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </section>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <h2><i class="far fa-calendar-alt"></i> Abril 2024</h2>
+            <p>Ahora que vamos a Safety, tenemos mismo horario, so, LE TOCÓ.</p>
+        </div>
+        <div class="calendar-grid">
+            <!-- Días de la semana -->
+            <div class="day-header">Lunes</div>
+            <div class="day-header">Martes</div>
+            <div class="day-header">Miércoles</div>
+            <div class="day-header">Jueves</div>
+            <div class="day-header">Viernes</div>
+            <div class="day-header">Sábado</div>
+            <div class="day-header">Domingo</div>
+            
+            <!-- Días vacíos antes del 1 de abril (lunes) -->
+            <div class="calendar-day empty-day"></div>
+            <div class="calendar-day">
+                <div class="day-number">1</div>
+                <div class="event-content"></div>
+            </div>
+            
+            <!-- Días del mes de abril (30 días) -->
+            <!-- Semana 1 -->
+            <div class="calendar-day">
+                <div class="day-number">2</div>
+                <div class="event-content"></div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">3</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">4</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">5</div>
+                
+            </div>
+            <div class="calendar-day with-plan">
+                <div class="day-number">6</div>
+                <div class="event-content">Dia de ir al parque, place: Simón bolivar, needs: Yuanira</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">7</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">8</div>
+            </div>
+            
+            <!-- Semana 2 -->
+            <div class="calendar-day">
+                <div class="day-number">9</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">10</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">11</div>
+                <div class="event-content"></div>
+            </div>
+            <div class="calendar-day with-plan">
+                <div class="day-number">12</div>
+                
+                <div class="event-content">Noche de diablo, discord, películas</div>
+            </div>
+            <div class="calendar-day with-plan">
+                <div class="day-number">13</div>
+                <div class="event-content">Vamos a un museo, caminar, comprar ropita</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">14</div>
+                <div class="event-content"></div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">15</div>
+            </div>
+            
+            <!-- Semana 3 -->
+            <div class="calendar-day">
+                <div class="day-number">16</div>
+                <div class="event-content"></div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">17</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">18</div>
+            </div>
+            <div class="calendar-day with-plan">
+                <div class="day-number">19</div>
+                <div class="event-content">Loki quiere conocerme, voy a la jeva casa y conozco a sus padres</div>
+            </div>
+            <div class="calendar-day with-plan">
+                <div class="day-number">20</div>
+                <div class="event-content">Dia de arrunchis, semanas difíciles.</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">21</div>
+                <div class="event-content"></div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">22</div>
+            </div>
+            
+            <!-- Semana 4 -->
+            <div class="calendar-day">
+                <div class="day-number">23</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">24</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">25</div>
+                <div class="event-content"></div>
+            </div>
+            <div class="calendar-day with-plan">
+                <div class="day-number">26</div>
+                <div class="event-content">ESCAPADA A UN PUEBLO SORPRESA</div>
+            </div>
+            <div class="calendar-day with-plan">
+                <div class="day-number">27</div>
+                <div class="event-content">ESCAPADA A UN PUEBLO SORPRESA</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">28</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">29</div>
+            </div>
+            
+            <!-- Semana 5 -->
+            <div class="calendar-day">
+                <div class="day-number">30</div>
+                <div class="event-content"></div>
+            </div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <span class="plan-indicator"></span>
+                <span>Safety plan con mi totoroesposa</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Hecho con todo el corazón de tu totoroesposo 💖 para tí.</p>
+
+        <p>NOT FINISHED CHECK ARGUMENTS AND IDEAS ------------</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
