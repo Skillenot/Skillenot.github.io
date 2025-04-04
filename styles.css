@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
-/* Header de pantalla completa */
+
 .full-screen-header {
     height: 100vh;
     background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
@@ -49,7 +49,7 @@ h1, h2, h3 {
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Indicador de scroll */
+
 .scroll-indicator {
     position: absolute;
     bottom: 40px;
@@ -57,15 +57,15 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     animation: bounce 2s infinite;
-    color: white; /* Asegurar que todos los textos sean blancos */
-    z-index: 2; /* Capa superior al overlay */
+    color: white; 
+    z-index: 2; 
 }
 
 .scroll-indicator span {
     font-size: 0.9rem;
     margin-bottom: 10px;
     color: #ffffff;
-    z-index: 2; /* Capa superior al overlay */
+    z-index: 2; 
 }
 
 .arrow {
@@ -74,10 +74,10 @@ h1, h2, h3 {
     border-left: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
     transform: rotate(-45deg);
-    z-index: 2; /* Capa superior al overlay */
+    z-index: 2; 
 }
 
-/* Secciones de mensajes */
+
 .message-section {
     min-height: 100vh;
     display: flex;
@@ -148,7 +148,6 @@ h1, h2, h3 {
     color: #c5bfbf;
 }
 
-/* Mensaje final */
  
 .final-message {
     position: relative;
@@ -160,7 +159,7 @@ h1, h2, h3 {
     text-align: center;
     padding: 40px 20px;
     overflow: hidden;
-    color: white; /* Color base para todo el texto */
+    color: white; 
 }
 
 .video-background {
@@ -171,7 +170,7 @@ h1, h2, h3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1; /* Capa baja */
+    z-index: 1; 
 }
 
 .final-overlay {
@@ -188,19 +187,19 @@ h1, h2, h3 {
     position: relative;
     z-index: 3; /* Capa superior (texto) */
     max-width: 800px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Mejor contraste */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); 
 }
 
 .final-message h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: white !important; /* Forzar color */
+    color: white !important; 
 }
 
 .highlight {
     font-size: 1.8rem;
     line-height: 1.5;
-    color: white !important; /* Forzar color */
+    color: white !important; 
 }
 
 /* Footer */
@@ -224,14 +223,14 @@ footer {
     60% { transform: translateY(-10px); }
 }
 
-/* Efectos al hacer hover */
+
 .message-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .full-screen-header h1 {
         font-size: 2.5rem;
@@ -254,9 +253,6 @@ footer {
     }
 }
 
-/* Añade esto al CSS existente */
-
-/* Estilos para imágenes */
 .full-screen-header {
     background-size: cover;
     background-position: center;
@@ -268,20 +264,20 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Overlay más oscuro (50% opacidad) */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 1; /* Capa inferior */
 }
 
 .header-content {
     position: relative;
-    z-index: 2; /* Capa superior al overlay */
-    color: white; /* Texto blanco */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+    z-index: 2; 
+    color: white; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
 }
 
 .header-content h1,
 .header-content .subtitle {
-    color: white; /* Asegurar que todos los textos sean blancos */
+    color: white; 
 }
 .image-overlay, .final-overlay {
     position: absolute;
@@ -289,7 +285,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 15, 15, 0.541); /* Azul pastel con transparencia */
+    background: rgba(15, 15, 15, 0.541); 
     z-index: 0;
 }
 
@@ -298,7 +294,7 @@ footer {
     z-index: 1;
 }
 
-/* Secciones con imagen de fondo */
+
 .message-section.with-image {
     background-size: cover;
     background-position: center;
@@ -306,13 +302,13 @@ footer {
     position: relative;
 }
 
-/* Tarjetas transparentes */
+
 .message-card.transparent {
     background-color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(5px);
 }
 
-/* Imágenes redondas */
+
 .round-image {
     width: 120px;
     height: 120px;
@@ -322,7 +318,7 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Grid de imágenes */
+
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -336,15 +332,13 @@ footer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Efecto parallax para algunas secciones */
+
 @media (min-width: 768px) {
     .message-section.with-image {
         background-attachment: fixed;
     }
 }
- /* [Todo el CSS anterior...] */
 
-        /* Nuevos estilos para mensajes cercanos */
         .compact-messages {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -364,7 +358,7 @@ footer {
             transform: translateY(-5px);
         }
 
-        /* Estilos para el reproductor de Spotify */
+   
         .spotify-player {
             background: #2d2d2d;
             border-radius: 12px;
@@ -391,7 +385,7 @@ footer {
             color: #1DB954;
         }
 
-     /* Estilos para el calendario */
+
 .calendar-container {
     width: 90%;
     max-width: 800px;
@@ -473,7 +467,7 @@ footer {
     margin-right: 8px;
 }
 
-/* Estilos responsivos */
+
 @media (max-width: 768px) {
     .calendar-grid {
         grid-template-columns: 1fr;
@@ -501,7 +495,7 @@ footer {
         margin-top: 0;
     }
     
-    /* Mostrar el día de la semana en móvil */
+ 
     .calendar-day::before {
         content: attr(data-weekday);
         display: inline-block;
@@ -511,7 +505,7 @@ footer {
         color: #5a5a5a;
     }
     
-    /* Estilos específicos para días de semana */
+   
     .calendar-day[data-weekday="Lunes"]::before { color: #5a5a5a; }
     .calendar-day[data-weekday="Martes"]::before { color: #5a5a5a; }
     .calendar-day[data-weekday="Miércoles"]::before { color: #5a5a5a; }
