@@ -60,14 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Intentar reproducir al cargar (puede ser bloqueado por el navegador)
-    playAudio();
 
-    // Opcional: Intentar de nuevo cuando el usuario interactúa con la página
-    document.body.addEventListener('click', function firstInteraction() {
-        playAudio();
-        document.body.removeEventListener('click', firstInteraction);
-    }, { once: true });
 });
 document.addEventListener('DOMContentLoaded', function() {
     // Solo necesitamos asegurarnos que los datos sean consistentes
