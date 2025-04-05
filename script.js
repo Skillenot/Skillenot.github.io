@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => {
                 // Falló el autoplay, mostrar botón para activar manualmente
                 audioControl.classList.add('error');
-                audioControl.querySelector('.audio-tooltip').textContent = 'Click';
+                audioControl.querySelector('.audio-tooltip').textContent = 'Click me';
                 console.log("Autoplay bloqueado:", error);
             });
         }
