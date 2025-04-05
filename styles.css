@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
     background-color: #f9f7fe;
     overflow-x: hidden;
+    
 }
 
 h1, h2, h3 {
@@ -100,8 +101,9 @@ h1, h2, h3 {
     padding: 40px;
     max-width: 600px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: justify;
     margin: 20px;
+
 }
 .message-card1 {
     background-color: rgb(7, 7, 7);
@@ -109,7 +111,7 @@ h1, h2, h3 {
     padding: 40px;
     max-width: 600px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: justify;
     margin: 20px;
     position: relative;
     overflow: hidden;
