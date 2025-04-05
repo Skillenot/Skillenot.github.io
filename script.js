@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             audioControl.querySelector('.audio-tooltip').textContent = 'Paused';
         }
     });
+    playAudio();
 
 
 });
